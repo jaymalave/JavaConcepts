@@ -6,6 +6,5 @@ public class StrMethods {
         System.out.println(txt.toUpperCase());
         System.out.println(txt.toLowerCase());
         System.out.println(txt.concat(txt2));
-        System.out.println("Changed");
 }
 }
