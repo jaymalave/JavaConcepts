@@ -8,9 +8,10 @@ public class Sincos{
     {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the value of x: ");
+        System.out.print("Enter the value of x:(angle) ");
 
         double x = sc.nextDouble();
+        //convert the angle into radians
         x = x * (PI / 180.0);
 
         System.out.print("Enter the value of n: ");
@@ -42,6 +43,7 @@ public class Sincos{
     {
         double ans=0;
         int c=0;
+        //this 'for loop' is the Maclaurin expansion of cosx 
         for (int i = 1; i < n; i++)
         {
             if(i%2==1)
@@ -56,6 +58,7 @@ public class Sincos{
     {
         double ans=0;
         int c=1;
+        //this 'for loop' is the Maclaurin expansion of sinx
         for (int i = 1; i < n; i++)
         {
             if(i%2==1)
